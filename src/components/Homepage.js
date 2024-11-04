@@ -244,7 +244,7 @@ function Homepage() {
 							</div>
 						</div>
 					</div>
-					<div className="font-['DM_Sans'] text-[#949BA0] text-[14px] font-normal leading-[24px] mt-[50px]">
+					<div className="font-['DM_Sans'] text-[#949BA0] text-[14px] font-normal leading-[24px] py-[50px]">
 						© 2024 Meka Innovation Pvt Ltd.
 					</div>
 				</div>
