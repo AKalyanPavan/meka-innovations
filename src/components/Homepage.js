@@ -222,7 +222,7 @@ function Homepage() {
 								<span>X</span>
 							</div>
 						</div>
-						<div className="grid lg:grid-cols-3 grid-cols-2 md:gap-x-[0px] gap-y-[50px] text-white font-normal text-[14px] lg:mr-[100px] mr-auto">
+						<div className="grid lg:grid-cols-3 grid-cols-2 md:gap-x-[0px] gap-y-[50px] text-white font-normal text-[14px] xl:mr-[100px] lg:mr-[50px] mr-auto">
 							<div className="flex flex-col gap-[24px]">
 								<span>Home</span>
 								<span>Work</span>
