@@ -15,6 +15,7 @@ import hardware from './../images/hardware.png';
 import fabrication from './../images/fabrication.png';
 import animation from './../images/animation.png';
 import digitalDesign from './../images/digital-design.png';
+import firstSection from './../images/first-section.png';
 
 import davisSiphron from './../images/davis-siphron.jpeg';
 
@@ -23,7 +24,9 @@ function Homepage() {
 		<>
 			<div className="max-w-[1440px] mx-auto lg:px-[80px] sm:px-[40px] px-[20px] pt-[20px] flex items-center font-medium text-[14px] font-['Inter'] justify-between">
 				<div className="flex items-end">
-					<img className="w-[114px]" src={logo} />
+					<a href="/">
+						<img className="w-[114px]" src={logo} />
+					</a>
 					<div className="max-[800px]:hidden flex items-center gap-[50px] lg:ml-[100px] ml-[50px]">
 						<div>Work</div>
 						<div className="flex items-center">
@@ -37,7 +40,7 @@ function Homepage() {
 					</div>
 				</div>
 				<div className="flex">
-					<div className="text-white bg-black rounded-[8px] sm:px-[32px] px-[24px] py-[16px]">Book Intro Call</div>
+					<div className="text-white bg-black rounded-[8px] sm:px-[32px] px-[24px] py-[16px] cursor-pointer">Book Intro Call</div>
 					{/*Burger Menu*/}
 					{/*<div className="min-[800px]:hidden border-[2px] border-solid p-[0.5px] rounded-[5px] border-black ml-[20px]">
 						<svg className="" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,6 +49,24 @@ function Homepage() {
 							<g id="SVGRepo_iconCarrier"> <path d="M5 12H20" stroke="#000000" stroke-width="2" stroke-linecap="round"/> <path d="M5 17H20" stroke="#000000" stroke-width="2" stroke-linecap="round"/> <path d="M5 7H20" stroke="#000000" stroke-width="2" stroke-linecap="round"/> </g>
 						</svg>
 					</div>*/}
+				</div>
+			</div>
+			<div className="max-w-[1440px] mx-auto lg:px-[80px] sm:px-[40px] px-[20px] mt-[100px] flex gap-[50px] items-center justify-between font-['Plus_Jakarta_Sans']">
+				<div className="xl:max-w-[770px]">
+					<div className="font-bold md:text-[64px] text-[28px] inline">
+						<span>Designing </span>
+						<span className="bg-[#CDFFA6] rounded-[16px] p-[8px]">Medical Solutions</span>
+						<span> with Precision and Care.</span>
+					</div>
+					<div className="py-[30px] font-normal text-[32px] text-[#1C63EE] font-['Nothing_You_Could_Do']">
+						(But we build other things too)
+					</div>
+					<div className="text-white bg-black rounded-[8px] sm:px-[32px] px-[24px] py-[16px] w-fit cursor-pointer">
+						Learn more <span className="max-sm:hidden">about our approach</span>
+					</div>
+				</div>
+				<div className="xl:block hidden">
+					<img src={firstSection} />
 				</div>
 			</div>
 			<div className="max-w-[1440px] mx-auto lg:px-[80px] sm:px-[40px] px-[20px] mt-[100px]">
@@ -66,8 +87,8 @@ function Homepage() {
 			</div>
 			<div className="font-['Plus_Jakarta_Sans'] max-w-[1440px] mx-auto lg:px-[80px] sm:px-[40px] px-[20px] mt-[150px]">
 				<div className="font-bold text-[12px] uppercase tracking-[1.5px] leading-[24px] text-center">Our expertise</div>
-				<div className="text-[40px] font-bold max-w-[820px] text-center mx-auto mt-[20px]">
-					Top-tier<span className="bg-[#A6BAFF] rounded-[16px] pb-[8px]"> growth marketers </span>ready to solve top challenges.
+				<div className="sm:text-[40px] text-[30px] font-bold max-w-[820px] text-center mx-auto mt-[20px]">
+					Top-tier<span className="sm:bg-[#A6BAFF] rounded-[16px] pb-[8px]"> growth marketers </span>ready to solve top challenges.
 				</div>
 				<div className="mt-[100px] grid md:grid-cols-2 grid-cols-1 gap-[25px] justify-items-center w-fit mx-auto">
 					<div className="w-fit row-span-5 md:row-start-1">
@@ -133,8 +154,8 @@ function Homepage() {
 				</div>
 				<div className="mt-[150px]">
 					<div className="font-bold text-[12px] uppercase tracking-[1.5px] leading-[24px] text-center">our process</div>
-					<div className="text-[40px] font-bold max-w-[820px] text-center mx-auto mt-[20px]">
-						The world moves fast, we keep pace. Cut through the noise with <span className="bg-[#FFF6A6] rounded-[16px] pb-[8px] pl-[5px]">our process.</span>
+					<div className="sm:text-[40px] text-[30px] font-bold max-w-[820px] text-center mx-auto mt-[20px]">
+						The world moves fast, we keep pace. Cut through the noise with <span className="sm:bg-[#FFF6A6] rounded-[16px] pb-[8px] pl-[5px]">our process.</span>
 					</div>
 					<div className="mt-[90px] grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-items-center w-fit mx-auto gap-[30px]">
 						<div className="bg-[#F6F6F7] max-w-[343px] px-[25px] py-[40px] rounded-[32px]">
@@ -171,7 +192,7 @@ function Homepage() {
 						</div>
 					</div>
 				</div>
-				<div className="mt-[100px] mb-[150px] text-white bg-black rounded-[8px] sm:px-[32px] px-[24px] py-[16px] w-fit mx-auto">Book a Call</div>
+				<div className="mt-[100px] mb-[150px] text-white bg-black rounded-[8px] sm:px-[32px] px-[24px] py-[16px] w-fit mx-auto cursor-pointer">Book a Call</div>
 				<div className="bg-[#CDFFA6] sm:px-[45px] px-[25px] py-[55px] rounded-[32px] max-w-[1085px] mx-auto">
 					<div className="text-[12px] font-bold uppercase tracking-[1.5px]">What our clients say</div>
 					<div className="lg:text-[40px] sm:text-[30px] text-[24px] font-bold lg:leading-[56px] sm:leading-[44px] leading-[33px] max-w-[880px] mt-[40px]">
@@ -195,11 +216,11 @@ function Homepage() {
 					</div>
 				</div>
 				<div className="mt-[150px] text-center">
-					<div className="font-bold text-[40px]">Free Design Consultation</div>
+					<div className="font-bold sm:text-[40px] text-[30px]">Free Design Consultation</div>
 					<div className="font-normal font-['DM_Sans'] leading-[24px] mt-[30px]">
 						Let's chat about your project goals and how we can help. Book a free consultation today.
 					</div>
-					<div className="mt-[50px] text-white bg-black rounded-[8px] sm:px-[32px] px-[24px] py-[16px] w-fit mx-auto">Book a Call</div>
+					<div className="mt-[50px] text-white bg-black rounded-[8px] sm:px-[32px] px-[24px] py-[16px] w-fit mx-auto cursor-pointer">Book a Call</div>
 				</div>
 			</div>
 			<div className="bg-[#0E1116] mt-[150px] pt-[70px]">
